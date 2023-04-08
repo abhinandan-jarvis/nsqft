@@ -3,7 +3,7 @@
 $email = $_POST['email'];
 
 // Set the recipient email address
-$to = '1sqftproptech@gmail.com';
+$to = 'hello@nsqft.com';
 
 // Set the email subject
 $subject = "New waitlist signup";
@@ -15,6 +15,6 @@ $message = "A new user has signed up for the waitlist with the email address: $e
 mail($to, $subject, $message);
 
 // Redirect the user to a thank-you page
-header('Location: thank-you.html');
+header('Location: https://nsqft.com/thank-you.html');
 exit();
 ?>
