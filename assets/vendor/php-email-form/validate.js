@@ -62,9 +62,9 @@
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
-    .then(data => {
+    .then(data => { alert(data);
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      if (data.trim() == 'Message sent successfully.') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
