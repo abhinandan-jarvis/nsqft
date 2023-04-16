@@ -62,7 +62,7 @@
         throw new Error(`${response.status} ${response.statusText} ${response.url}`); 
       }
     })
-    .then(data => { alert(data);
+    .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'Message sent successfully.') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
